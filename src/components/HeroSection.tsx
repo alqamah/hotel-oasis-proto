@@ -1,18 +1,12 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative h-screen bg-hotel-navy text-white overflow-hidden">
+  return <section className="relative h-screen bg-hotel-navy text-white overflow-hidden">
       {/* Hero Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070')", 
-          filter: "brightness(0.6)" 
-        }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: "url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070')",
+      filter: "brightness(0.6)"
+    }} />
       
       {/* Hero Content */}
       <div className="relative h-full container mx-auto px-4 flex flex-col justify-center md:max-w-4xl">
@@ -31,7 +25,7 @@ const HeroSection = () => {
             </Button>
           </a>
           <a href="#rooms">
-            <Button variant="outline" className="border-white text-white hover:bg-white/20 rounded-full px-8 py-6 text-lg font-medium">
+            <Button variant="outline" className="border-white text-white rounded-full px-8 py-6 text-lg font-medium bg-gray-900 hover:bg-gray-800">
               Explore Rooms
             </Button>
           </a>
@@ -47,8 +41,6 @@ const HeroSection = () => {
           </svg>
         </a>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
