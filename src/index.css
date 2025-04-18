@@ -97,5 +97,31 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Montserrat', sans-serif;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Custom styles for hotel website */
+.heading-fancy {
+  @apply font-serif tracking-wide;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hover-scale {
+  @apply transition-transform duration-300;
+}
+
+.hover-scale:hover {
+  @apply transform scale-105;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
 }
