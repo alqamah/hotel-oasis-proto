@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { MapPin, Navigation, Phone, Mail, ExternalLink } from "lucide-react";
-
 const LocationMap = () => {
-  return (
-    <section id="contact" className="py-16 md:py-24 bg-white">
+  return <section id="contact" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 heading-fancy text-hotel-navy">
@@ -18,13 +15,7 @@ const LocationMap = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Map */}
           <div className="h-[400px] bg-gray-200 rounded-lg shadow-md overflow-hidden">
-            <iframe
-              title="Hotel Oasis Location"
-              className="w-full h-full border-0"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1998216053364!2d-73.9789611242344!3d40.759935635761865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1682097175616!5m2!1sen!2sus"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <iframe title="Hotel Oasis Location" className="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1998216053364!2d-73.9789611242344!3d40.759935635761865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1682097175616!5m2!1sen!2sus" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
           
           {/* Contact Information */}
@@ -69,17 +60,13 @@ const LocationMap = () => {
               </div>
             </div>
             
-            <div className="mt-8 space-y-4">
-              <Button className="w-full bg-hotel-navy hover:bg-hotel-navy/90 rounded-full">
+            <div className="mt-8 space-y-4 mx-0 py-[6px] px-[5px]">
+              <Button className="w-full bg-hotel-navy hover:bg-hotel-navy/90 rounded-full mx-0 my-[12px]">
                 <Phone className="mr-2 h-4 w-4" />
                 Call Now
               </Button>
               
-              <a 
-                href="https://maps.google.com/?q=Times+Square,+New+York,+NY" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              <a href="https://maps.google.com/?q=Times+Square,+New+York,+NY" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="w-full border-hotel-navy text-hotel-navy hover:bg-hotel-navy/10 rounded-full">
                   <Navigation className="mr-2 h-4 w-4" />
                   Get Directions
@@ -90,8 +77,6 @@ const LocationMap = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default LocationMap;
